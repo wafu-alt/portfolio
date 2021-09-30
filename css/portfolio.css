@@ -9,3 +9,9 @@
 
 
 /*  */
+
+.slide1 { background: thistle; width: 100px; height: 100px;}
+.slide2 { background: teal; width: 100px; height: 100px;}
+.slide3 { background: springgreen; width: 100px; height: 100px;}
+.slide4 { background: slateblue; width: 100px; height: 100px;}
+.slide5 { background: sienna; width: 100px; height: 100px;}
