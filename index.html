@@ -4,57 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KJY Portfolio</title>
 
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/fullpage.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/portfolio.css" type="text/css">
     
 
     <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
-    <script src="js/fullpage.js" type="text/javascript"></script>
-    <script src="js/slick.min.js.js" type="text/javascript"></script>
-    <script src="js/easings.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
     <script src="js/common.js" type="text/javascript"></script>
 
-    <script>
-         $(document).ready(function() {
-           
-        });
-    </script>
+   
 
 
 </head>
 <body>
     <header id="header">
         <div class="wrap">
-            <h1>logo</h1>
+            <h1><img src="images/Logo.png" alt="로고KJY Portfolio"></h1>
             <nav>
                 <ul class="gnb">
-                    <li><a href="#page1">pag1</a></li>
-                    <li><a href="#page2">pag2</a></li>
-                    <li><a href="#page3">pag3</a></li>
-                    <li><a href="#page4">pag4</a></li>
-                    <li><a href="#page5">pag5</a></li>
-                </ul>
+                    <li><a href="#main_visual">Main Page</a></li>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#slide_works">Works</a></li>
+                    <li><a href="#history">History</a></li>
+                </ul><!-- gnb -->
             </nav>
-        </div>
-    </header>
-    <div id="fullpage">
-        <div class="section" data-anchor="page1">Some section</div>
-        <div class="section" data-anchor="page2">Some section</div>
-        <div class="section" data-anchor="page3">Some section</div>
-        <div class="section" data-anchor="page4">Some section
+        </div><!-- wrap -->
+    </header><!-- header -->
+    
+    <article id="main_visual" class="target" >
+        <div class="wrap">
+            <ul class="mv">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li class="slide3"></li>
+            </ul><!-- mv -->
+        </div><!-- wrap -->
+    </article><!-- main_visual -->
 
-            <ul>
-                <div class="slide slide1"> Slide 1 </div>
-                <div class="slide slide2"> Slide 2 </div>
-                <div class="slide slide3"> Slide 3 </div>
-                <div class="slide slide4"> Slide 4 </div>
+    <section id="intro"  class="target">
+        <div class="wrap">
+            <div class="intro_navi">
+                <ul>
+                    <li><a href="#intro" class="AboutME">About ME</a></li>
+                    <li><a href="#skills" class="Skills">Skills</a></li>
+                </ul>
+            </div>
+            <div class="intro_main">
+                <div class="intro_txt">
+                    <div class="l_photo"></div>
+                    <div class="r_txt">
+                        <dl>
+                            <dd><span>이름</span> : 김재영</dd>
+                            <dd><span>나이</span> : 32살 (1990년생)</dd>
+                            <dd><span>주소</span> : 경남 김해시</dd>
+                            <dd><span>공부블로그</span> : blog.naver.com/dacapolin</dd>
+                            <dd><span>Git-hub</span> : github.com/wafu-alt</dd>
+                            <dd><span>이메일</span> : dacapolin@naver.com</dd>
+                            <dd><span>연락처</span> : 010-6660-7539</dd>
+                        </dl>
+                        <dl>
+                            <dd><span>교육수료</span> : 부산IT교육센터 2021.05 ~ 2021.10 수료</dd>
+                            <dd><span>경력사항</span> : 진성이엔씨 2014.05 ~ 2017.06 (사원,설계팀)</dd>
+                            <dd><span>최종학력</span> : 연암공업대학 2008.02 ~ 2013.02 졸업</dd>
+                        </dl>
+                    </div>
+                </div><!-- intro_txt -->
+                <div class="intro_back"></div>
+
+                <ul id="skills">
+                    <li class="html">
+                        <div></div><!-- 백그라운드 이미지 채우기 -->
+                        <p>HTML - 85%</p>
+                        <dl><dd></dd></dl><!-- 퍼센트 활성화 -->
+                    </li>
+                    <li class="css">
+                        <div></div>
+                        <p>CSS - 80%</p>
+                        <dl><dd></dd></dl>
+                    </li>
+                    <li class="jQ">
+                        <div></div>
+                        <p>jQuerys - 25%</p>
+                        <dl><dd></dd></dl>
+                    </li>
+                    <li class="Ps">
+                        <div></div>
+                        <p>Photoshop - 65%</p>
+                        <dl><dd></dd></dl>
+                    </li>
+                    <li class="Ai">
+                        <div></div>
+                        <p>ILLUSTRATOR - 60%</p>
+                        <dl><dd></dd></dl>
+                    </li>
+                </li><!-- skills -->
+            </div><!-- intro_main -->
+        </div><!-- wrap -->
+    </section><!-- intro -->
+
+    <section id="slide_works"  class="target">
+        <div class="wrap">
+            <ul class="works">
+                <li class="work1">
+                    <dl>
+                        <dd>+표시</dd>
+                        <dd><a href="#" target="_blank">링크</a></dd>
+                    </dl>
+                </li>
+                
+                <li class="work2">
+                    <dl>
+                        <dd><img src="" alt="+"></dd>
+                        <dd><a href=""></a></dd>
+                    </dl>
+                </li>
             </ul>
-        </div>
-        <div class="section" data-anchor="page5">Some section</div>
-    </div>
+        </div><!-- wrap -->
+    </section><!-- slide_works -->
+
+    <section id="history"  class="target">
+        <div class="wrap">
+            <ul>
+                <li class="floor1">
+                    <ul class="floor_wrap">
+                        <li class="floor_img">
+                            <dl class="works_img">
+                                <dd>태그</dd>
+                                <dd>링크</dd>
+                            </dl>
+                        </li>
+                        <li class="floor_txt">
+                            <dl class="works_txt">
+                                <dt>제목</dt>
+                                <dd>글 여러가지 쓸 예정</dd>
+                            </dl>
+                        </li>
+                        <li class="dummy"></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <dl class="works_img">
+                        <dd><img src="" alt=""></dd>
+                        <dd><a href=""></a></dd>
+                    </dl>
+
+                    <dl class="works_txt">
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div><!-- history -->
+    </section>
+        
+    
+
+    <footer id="footer">
+        <div class="wrap">
+            <p>Copyright &copy; My Website 2021</p>
+        </div><!-- wrap -->
+    </footer><!-- footer -->
 </body>
 </html>
