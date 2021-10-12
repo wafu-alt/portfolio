@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* backgound-img control */
+#wrap { background: url('../images/0_background-image.jpg') repeat-y center top; background-size: cover; min-width: 768px;}
+
+/* bread_crumbs */
+#bread_crumbs .inner { width: 1140px; margin: 0 auto;}
+#bread_crumbs ul { display: inline-block; margin-top: 30px ;}
+#bread_crumbs ul li { float: left;}
+#bread_crumbs ul li a { display: block; color: #fff;}
+#bread_crumbs ul li:nth-child(1) a { padding-left: 30px; background: url('../images/sub_images/0_bread_home.png') no-repeat left 1px; margin-right: 10px;}
+#bread_crumbs ul li:nth-child(2) a { padding-left: 20px; background: url('../images/sub_images/0_bread_arrow.png') no-repeat left center; margin-right: 10px;}
+#bread_crumbs ul li:nth-child(3) a { padding-left: 20px; background: url('../images/sub_images/0_bread_arrow.png') no-repeat left center; }
+
+/* tablet */
+@media all and (min-width : 1024px) and (max-width : 1420px) {
+    #bread_crumbs .inner { width: 940px; }
+}
+/* mobile */
+@media all and  ( max-width : 1024px) {
+    #bread_crumbs .inner { width: 728px; margin-left: 20px; }
+   
+}
+
+
+/* char_intro_rel */
+#char_intro_rel .inner { text-align: center; width: 1140px; margin: 0 auto; }
+#char_intro_rel h2 { text-align: left; font-size: 32px; font-weight: 700; color: #fff; padding: 70px 0 100px;}
+#char_intro_rel .inner div { height: 2111px; background: url('../images/sub_images/1_char_intro_rel.png') no-repeat center top; background-size: contain; margin-bottom: 100px;}
+
+/* tablet */
+@media all and (min-width : 1024px) and (max-width : 1420px) {
+    #char_intro_rel .inner { width: 940px; }
+    #char_intro_rel h2 {  padding: 70px 0 70px;}
+    #char_intro_rel .inner div { height: 1881px;  background: url('../images/sub_images/1_char_intro_rel-tablet.png') no-repeat center top; background-size: contain; margin-bottom: 100px;}
+}
+/* mobile */
+@media all and  ( max-width : 1024px) {
+    #char_intro_rel .inner { width: 728px; margin-left: 20px; }
+    #char_intro_rel h2 {  padding: 50px 0 50px;}
+    #char_intro_rel .inner div { height: 1724px;  background: url('../images/sub_images/1_char_intro_rel-mobile.png') no-repeat center top; background-size: contain; margin-bottom: 50px;}
+   
+}

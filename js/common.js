@@ -45,7 +45,7 @@ $(document).ready(function () {
 
 //대표작품 슬라이드
     $('.works').slick({ 
-        autoplay:false,
+        autoplay:true,
         dots: true,
         infinite: true,
         speed: 300,
@@ -70,7 +70,6 @@ $(document).ready(function () {
     });
 
 
-//히스토리 작품 프리뷰 보기 닫기
     
 
 });

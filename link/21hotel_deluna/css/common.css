@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* 스타일 초기화 */
+html { font-size: 100%; overflow-y: scroll; }
+
+/* 요소 여백 초기화  */
+article,aside,audio,blockquote,body,canvas,caption,dd,details,div,dl,dt,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,iframe,legend,li,main,menu,nav,ol,p,pre,section,summary,table,tbody,td,template,textarea,tfoot,th,thead,tr,ul,video { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* 하이퍼링크 설정 */
+a,a:hover { color: #000; text-decoration: none; }
+/* 부트스트랩에서는 기본으로 호버하면 파란색으로 변함 그것을 초기화 */
+
+/* 제목요소 */
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; } 
+
+/* 목록 불릿 없애기 */
+ol, ul { list-style: none; }
+dl, ol, ul {  margin: 0;}
+
+/* 테이블 - 마크업에 'cellspacing="0"' 지정 함께 필요 */
+table { border-collapse: collapse; border-spacing: 0; border: 0 none; width: 100%; }
+
+/* 텍스트 관련 요소 초기화 */
+address, caption, em { font-weight: normal; font-style: normal; }
+
+/* 웹브라우저에서  */
+caption, legend, hr { display: none; }
+
+/* 테두리 없애기 */
+fieldset, img, input { border: 0 none; outline: none; } 
+
+/* 수직정렬 */
+input, select, textarea { vertical-align: middle; }
+
+
+
+/* 공통사항 */
+body { font-family: 'Poppins', 'Noto Sans KR', sans-serif; font-size: 100%; line-height: 1.5; color: #000; min-width: 768px;}
+
+
+
+
+
+/* header */
+#header .inner { display: flex; max-width: 1140px; justify-content: space-between; margin: 0 auto; padding-top: 57px; align-items: center;}
+#header h1 img { width: 146px;}
+#header .gnb > li { display: inline-block; margin: 0 20px; position: relative; padding: 5px 0;}
+#header .gnb > li > a { color: #fff; font-size: 1.25rem;}
+
+#header .depth2 { display: none;  position: absolute; left: -15px; top: 38px;  justify-content: flex-start; width: 500px;}
+
+#header .dp2_sns { left: -250px;}
+#header .depth2 > li {margin: 0 10px; }
+#header .depth2 > li > a { display: block; color: #fff; border-top: 1px solid rgba(0, 0, 0, 0); transition: border 0.5s;}
+
+#header .gnb > li:hover > a { color: #FFB33A ;}
+#header .gnb > li:hover .depth2 { display: flex;}
+#header .depth2 > li:hover a { border-top: 1px solid #FFB33A ;}
+
+#header .mgnb_menu::before { content: ''; position: absolute; top: 6px; display: block; width: 30px; height: 3px; background: #fff;}
+#header .mgnb_menu { display: none; width: 30px; height: 3px; background: #fff; position: relative; cursor: pointer;}
+#header .mgnb_menu::after { content: ''; position: absolute; top: 12px; display: block; width: 30px; height: 3px; background: #fff;}
+/* hidden menu */
+.mgnb_wrap::before { content: ''; position: fixed; left: 0; top: 0; width: 30%; height: 100%; background: rgba(0, 0, 0, 0.5);}
+.mgnb_wrap { display: none; position: fixed; right: 0; top: 0; width: 70%; height: 100%; background: #070e21;  z-index: 99999; padding: 100px 80px;}
+.mgnb_wrap a { color: #fff; font-size: 30px;}
+.mgnb_wrap .mgnb > li { margin-bottom: 25px;}
+.mgnb_wrap .mdepth2 { display: none;}
+.mgnb_wrap .mdepth2 > li { margin-top: 15px;}
+.mgnb_wrap .mdepth2 a { display: block; padding-left: 20px; font-size: 18px; }
+.mgnb_wrap .mgnb_close { position: absolute; right: 70px; top: 100px; height: 40px; cursor: pointer;}
+.mgnb_wrap .mgnb_close img { width: 100%;}
+
+.mgnb_wrap .mgnb > li:hover > a { color: #FFB33A;}
+.mgnb_wrap .mdepth2 > li:hover > a { color: #FFB33A;}
+
+
+/* tablet */
+@media all and (min-width : 1024px) and (max-width : 1420px) {
+    #header .inner { max-width: 940px;}
+    #header .dp2_photo { left: -110px;}
+
+}
+/* mobile */
+@media all and  ( max-width : 1024px) {
+    #header .inner { max-width: 710px; margin: 0 40px 0 20px;}
+    #header .gnb { display: none;}
+    #header .mgnb_menu { display: block;}
+}
+
+
+/* footer */
+#footer { background: #a8a8a8;}
+#footer .inner { text-align: center;}
+#footer .footer_info { color: #fff; }
+#footer .footer_info dt { padding: 50px 0 20px;}
+#footer .footer_info .streaming { padding: 20px 0 10px;}
+#footer .footer_info .grade { display: inline-block; background: #ffb33a; padding: 10px; width: 220px; margin-bottom: 70px;}
+
+
+/* tablet */
+@media all and (min-width : 1024px) and (max-width : 1420px) {
+    #footer .footer_info dt { padding: 40px 0 20px;}
+    #footer .footer_info .grade {  margin-bottom: 50px;}
+}
+/* mobile */
+@media all and  ( max-width : 1024px) {
+    #footer .footer_info dt { padding: 30px 0 20px;}
+    #footer .footer_info .grade {  margin-bottom: 30px;}
+    
+}
+
