@@ -18,7 +18,7 @@ $(document).ready(function () {
     // });
     
     
-    //current 클래스 추가
+//자기소개에 왼쪽 gnb 제어 (current 클래스 추가)
     $('.AboutME').click(function () { 
         $(this).addClass('current')
         $('.Skills').removeClass('current');
@@ -30,7 +30,7 @@ $(document).ready(function () {
     
     
     
-    //작품 슬라이드
+//메인 슬라이드
     $('.mv').slick({ 
         autoplay:true,
         autoplaySpeed: 1000,
@@ -43,7 +43,7 @@ $(document).ready(function () {
     });
 
 
-    //작품 슬라이드
+//대표작품 슬라이드
     $('.works').slick({ 
         autoplay:false,
         dots: true,
@@ -53,5 +53,24 @@ $(document).ready(function () {
         adaptiveHeight: true
     });
 
+
+//대표 작품 프리뷰 보기 닫기
+    $('.work21_preview').click(function(){ 
+        $('.work21_view').fadeIn();
+    });
+    $('.work_close').click(function(){
+        $('.work21_view').fadeOut();
+    });
+
+    $('.work16_preview').click(function(){ 
+        $('.work16_view').fadeIn();
+    });
+    $('.work_close').click(function(){
+        $('.work16_view').fadeOut();
+    });
+
+
+//히스토리 작품 프리뷰 보기 닫기
+    
 
 });

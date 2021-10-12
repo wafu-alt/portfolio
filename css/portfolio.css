@@ -73,21 +73,10 @@ body { background: #fbfbef;}
 #slide_works .works h2 {  width: 1015px; height: 500px; }
 #slide_works .works li > p { display: inline-block; padding: 10px 0; }
 #slide_works .works .work_hover::before { content: '';  position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5); z-index: -1;}
-#slide_works .works .work_hover { display: flex; position: absolute;  justify-content: center; align-items: center;   width: 100%; height: 100%; z-index: 500;}
+#slide_works .works .work_hover { display: none; position: absolute;  justify-content: center; align-items: center;   width: 100%; height: 100%; z-index: 500;}
 #slide_works .works .work_hover dd { padding: 0 50px; cursor: pointer;}
 /* 작품에 호버시 창 보이기 */
 #slide_works .works:hover .work_hover { display: flex;}
-
-
-/* 작품 프리뷰 할 시 연결화면 */
-#slide_works .work2_view { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5);}
-#slide_works .work2_view .wokr_window { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 900px; height: 800px; background: #fbfbef; overflow-y: scroll; }
-#slide_works .wokr_window a > a { display: block; width: 100px; }
-#slide_works .wokr_window a img { display: inline-block; width: 30px;}
-#slide_works .wokr_window .work_close { display: block; position: absolute; right: 20px; top: 20px; width: 30px; cursor: pointer;}
-#slide_works .work2_view .work_img {background: url('../images/Thumbnail2.jpg') no-repeat center 100px; background-size: contain; height: 5000px;}
-
-
 /* 슬라이드 버튼 CSS 코드 */ /* Arrows */
 .works .slick-prev,.works .slick-next { font-size: 0; line-height: 0; position: absolute; top: 50%; z-index: 999; display: block; width: 50px; height: 50px; transform: translate(0, -50%); cursor: pointer; border: 5px solid #6495ed;  border-bottom: none; border-left: none; 
     outline: none; opacity: .5; transition: opacity 0.5s; background: transparent; }
@@ -99,14 +88,43 @@ body { background: #fbfbef;}
 .works .slick-dots li { position: relative; display: inline-block; width: 20px; height: 20px;  border-radius: 50%; background: #6495ed; padding: 0; opacity: 0.2; margin: 0 5px; cursor: pointer; }
 .works .slick-dots li button { display: block; padding: 5px; cursor: pointer; color:transparent; border: 0; outline: none; background: transparent; }
 .works .slick-dots li.slick-active { opacity: 1;}
+/* 작품 프리뷰 할 시 연결화면 */
+.work21_view,
+.work16_view { display: none; position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5);}
+.work_window {  position: fixed; left: 50%; top: 50%; transform: translate(-50%,-55%); width: 900px; height: 800px; box-shadow: 10px 10px 10px #000 ; overflow-y: scroll; }
+.work_window .new_window { position: absolute; right: 60px; top: 23px; display: block; border: 1px #fff; border-radius: 5px; color: #fff;}
+.work_window .work_close { display: block; position: absolute; right: 20px; top: 20px; width: 30px; cursor: pointer;}
+
 
 
 /* history */
 #history .wrap { padding-top: 200px;}
-#history .floor1 .floor_wrap { display: flex; justify-content: left; align-items: center;}
-#history .floor1 .floor_wrap .floor_img { width: 100px ; height: 100px; background: fuchsia; flex: 0 0 30%; order: 1;}
-#history .floor1 .floor_wrap .floor_txt { background: indigo; flex: 0 0 30%; order: 0;}
-#history .floor1 .floor_wrap .dummy {flex: 1 1 40%; order: 2; }
+#history .wrap > ul > li { margin-bottom: 200px;}
+#history .floor_wrap { display: flex; justify-content: left; align-items: center;}
+#history .floor_wrap h2 img { height: 200px; }
+/* 이미지 부분 제어 */
+#history .floor_wrap .floor_img {  height: 200px; flex: 0 0 30%; position: relative;}
+#history .floor_img .work_hover::before { content: '';  position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5); z-index: -1;}
+#history .floor_img .work_hover { display: none; position: absolute;  justify-content: center; align-items: center; width: 100%; height: 100%; z-index: 0;}
+#history .floor_img .work_hover:nth-child(1) dd{ cursor: pointer; margin: 0 20px;}
+/* 호버시 */
+#history .floor_img:hover .work_hover { display: flex;}
+/* 텍스트 부분 제어 */
+#history .floor_wrap .floor_txt {flex: 0 0 30%; height: 200px; padding: 30px; }
+#history .floor_wrap .floor_txt dt { font-weight: 600; padding-bottom: 10px;  }
+#history .floor_wrap .floor_txt dd { font-size: 14px;  }
+#history .floor_wrap .dummy {flex: 1 1 40%; }
+/* 홀수 순서 */
+#history .wrap > ul li:nth-of-type(1n) .floor_img { order: 1; background: springgreen;}
+#history .wrap > ul li:nth-of-type(1n) .floor_txt { order: 0; background: turquoise; text-align: right;}
+#history .wrap > ul li:nth-of-type(1n) .dummy { order: 2; background: violet;}
+/* 짝수 순서 */
+#history .wrap > ul li:nth-of-type(2n) .floor_img { order: 1;}
+#history .wrap > ul li:nth-of-type(2n) .floor_txt { order: 2; text-align: left; }
+#history .wrap > ul li:nth-of-type(2n) .dummy { order: 0;}
+
+
+
 
 
 /* footer */
