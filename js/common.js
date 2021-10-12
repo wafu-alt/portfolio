@@ -46,8 +46,11 @@ $(document).ready(function () {
     //작품 슬라이드
     $('.works').slick({ 
         autoplay:false,
-        dots:true,
-        fade: false
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
     });
 
 

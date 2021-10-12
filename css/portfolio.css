@@ -42,7 +42,7 @@ body { background: #fbfbef;}
 /* 프로파일 제어 */
 #intro .intro_main { flex: 1 1 50%; position: relative;}
 #intro .intro_txt {display: flex; justify-content: flex-start; align-items: center;}
-#intro .intro_txt .l_photo { width: 300px; height: 300px; border-radius: 50%; background: cornflowerblue url("../images/photo.png") no-repeat center 50px; background-size: contain;}
+#intro .intro_txt .l_photo { width: 300px; height: 300px; border-radius: 50%; background: cornflowerblue url("../images/photo.png") no-repeat center 40px; background-size: contain;}
 #intro .intro_txt .r_txt {padding: 20px; padding-left: 100px; }
 #intro .intro_txt .r_txt span { color: #777;}
 #intro .intro_back { position: absolute; top: -100px; right: -100px; transform: rotate(45deg); background: cornflowerblue; width: 200px; height: 200px; z-index: -1;}
@@ -67,23 +67,36 @@ body { background: #fbfbef;}
 
 
 /* slide_works */
-#slide_works .wrap { padding-top: 200px;}
-#slide_works .works { position: relative;}
-#slide_works .works li.work1 { background: darkred; width: 100px; height: 200px; }
-#slide_works .works li.work1  dl { background: lightpink; opacity: 0.2; display: flex; justify-content: space-evenly; align-items: center; padding: 80px;}
-#slide_works .works li.work1  dl dd { background: lightpink; }
+#slide_works .wrap { padding-top: 200px; text-align: center;} 
+#slide_works .works { display: inline-block; position: relative;  width: 1015px;  height: 500px;}
+#slide_works .works .work_po { position: relative; }
+#slide_works .works h2 {  width: 1015px; height: 500px; }
+#slide_works .works li > p { display: inline-block; padding: 10px 0; }
+#slide_works .works .work_hover::before { content: '';  position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5); z-index: -1;}
+#slide_works .works .work_hover { display: flex; position: absolute;  justify-content: center; align-items: center;   width: 100%; height: 100%; z-index: 500;}
+#slide_works .works .work_hover dd { padding: 0 50px; cursor: pointer;}
+/* 작품에 호버시 창 보이기 */
+#slide_works .works:hover .work_hover { display: flex;}
 
-#slide_works .works li.work2 { background: deepskyblue;  }
 
-/* 슬라이드 버튼 CSS 코드 */
-/* Arrows */
-.works .slick-prev,.works .slick-next { font-size: 0; line-height: 0; position: absolute; top: 50%; z-index: 999; display: block; width: 20px; height: 20px; transform: translate(0, -50%); cursor: pointer; border: 1px solid #fff; border-radius: 50%; outline: none; opacity: .5; transition: opacity 0.5s; }
+/* 작품 프리뷰 할 시 연결화면 */
+#slide_works .work2_view { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5);}
+#slide_works .work2_view .wokr_window { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 900px; height: 800px; background: #fbfbef; overflow-y: scroll; }
+#slide_works .wokr_window a > a { display: block; width: 100px; }
+#slide_works .wokr_window a img { display: inline-block; width: 30px;}
+#slide_works .wokr_window .work_close { display: block; position: absolute; right: 20px; top: 20px; width: 30px; cursor: pointer;}
+#slide_works .work2_view .work_img {background: url('../images/Thumbnail2.jpg') no-repeat center 100px; background-size: contain; height: 5000px;}
+
+
+/* 슬라이드 버튼 CSS 코드 */ /* Arrows */
+.works .slick-prev,.works .slick-next { font-size: 0; line-height: 0; position: absolute; top: 50%; z-index: 999; display: block; width: 50px; height: 50px; transform: translate(0, -50%); cursor: pointer; border: 5px solid #6495ed;  border-bottom: none; border-left: none; 
+    outline: none; opacity: .5; transition: opacity 0.5s; background: transparent; }
 .works .slick-prev:hover,.works .slick-prev:focus,.works .slick-next:hover,.works .slick-next:focus { opacity: 1; }
-.works .slick-prev { left: -5px;  background: #000; }
-.works .slick-next { right: -5px; background: #000; }
+.works .slick-prev { left: -50px;  transform: rotate(-135deg);}
+.works .slick-next { right: -50px; transform: rotate(45deg); }
 /* Dots */
-.works .slick-dots { position: absolute; left: 50%; bottom: 10px; display: block; width: 50px; padding: 0; margin: 0; transform: translateX(-50%);}
-.works .slick-dots li { position: relative; display: inline-block; width: 10px; height: 5px; background: #fff; padding: 0; opacity: 0.2; margin: 0; cursor: pointer; }
+.works .slick-dots { position: absolute; left: 50%; bottom: -70px; display: block; width: 300px; padding: 0; margin: 0; transform: translateX(-50%);}
+.works .slick-dots li { position: relative; display: inline-block; width: 20px; height: 20px;  border-radius: 50%; background: #6495ed; padding: 0; opacity: 0.2; margin: 0 5px; cursor: pointer; }
 .works .slick-dots li button { display: block; padding: 5px; cursor: pointer; color:transparent; border: 0; outline: none; background: transparent; }
 .works .slick-dots li.slick-active { opacity: 1;}
 
