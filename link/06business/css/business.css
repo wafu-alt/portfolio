@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol { list-style: none;}
+a { text-decoration: none; color: #000;}
+table { border-collapse: collapse;}
+body { font-family: "맑은 고딕"; font-size: 16px; line-height: 1.5; color: #000;}
+
+/* 공통적용 */
+.inner { width: 1200px; margin: 0 auto;}
+.clearfix::after { content: ""; display: block; clear: both;}
+/* 최상단 */
+#top { background: #000;}
+#top .top_menu {float: left;}
+#top .top_menu li {float: left;}
+#top .top_menu li a { display: block; color: #fff; font-size: 10px; padding: 10px 15px 10px 0; }
+#top .util { float: right;}
+#top .util li { float: left;}
+#top .util li a { display: block; color: #98d5ff; font-size: 10px; padding: 10px 0 10px 20px;}
+/* 상단타이틀 */
+#header h1 { float: left; padding: 20px 0;}
+#header nav { float: right;}
+#header nav .gnb li { float: left;}
+#header nav .gnb li a { display: block; font-size: 20px; font-weight: 600; padding: 30px 30px ;}
+/* 서브타이틀 */
+#sub_title .sub_visual{ background: url(../images/title_bg.jpg) no-repeat center 0; height: 300px; text-align: center; padding: 120px 0; color: #fff;}
+#sub_title .sub_visual h2 { font-size: 45px;}
+/* 네비게이션 */
+#sub_title .lnb ul{ float: left; width: 1200px; margin-bottom: 100px;}
+#sub_title .lnb ul li { float: left;}
+#sub_title .lnb a { display: block; background: #eeeeee; padding: 25px 115px ;}
+#sub_title .lnb a:hover, #sub_title .lnb a.on  { background: #0c4da2; color: #fff;}
+/* 콘텐츠 */
+#contents .mission1 .mis1_img_box { width: 500px; height: 440px; float: left;} 
+#contents .mission1 .mis1_txt_box { width: calc(100% - 500px); height: 440px; float: right; color: #fff; background: #4d5058; padding-left: 50px ; padding-right: 50px;}
+.mis1_txt_box h3 { padding-top: 40px; font-size: 27px;} 
+.mis1_txt_box .blue { display: block; padding-top: 15px; padding-bottom: 30px; color: #9dd5ff; font-weight: 600;}
+.mis1_txt_box h4 { padding-bottom: 15px;}
+.mis1_txt_box p { color: #cccccc;}
+.mis1_txt_box .underline { display: block; padding-top: 35px; padding-bottom: 10px; text-decoration: underline; font-weight: 600;}
+
+#contents .txt_box { float: left; width: calc(100% - 200px - 55px);}
+#contents .img_box { float: right; width: 200px; height: 130px;}
+#contents .mission2 { margin-top: 50px;}
+#contents .mission2 h4 { padding-bottom: 15px;}
+#contents .mission3 { margin-top: 50px;}
+#contents .mission3 h4 { padding-bottom: 15px;}
+/* footer */
+footer { background: #666666; margin-top: 100px;}
+footer .footer_txt { float: left; color: #cccccc; padding-top: 55px; padding-bottom: 70px;}
+footer .footer_txt address { font-style: normal; }
+footer .footer_txt span { color: #7bc0ff;}
+footer .footer_logo { float: right; padding-top: 60px;}

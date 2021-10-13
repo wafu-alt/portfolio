@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>레스토랑 오늘</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat&family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/fullpage.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/easings.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function() {
+            new fullpage('#fullpage', {
+                navigation: true,
+                responsiveWidth: 1024,
+                anchors: ['menu1', 'menu2', 'menu3', 'menu4', 'menu5'],
+                parallax: true,
+                autoScrolling: true,
+                scrollOverflow: true,
+                sectionsColor: ['#ccc', '#fff', '#fff', '#fff'],
+                onLeave: function(origin, destination, direction) {
+                    console.log("Leaving section" + origin.index);
+                },
+            });
+        });
+    </script>
+</head>
+
+<body>
+    
+
+
+    <div id="fullpage">
+        <article id="main_visual" class="section" data-anchor="menu1">
+           <header id="header">
+        <!--header-->
+        <div class="inner">
+            <h1><a href="#"><img src="images/logo.png" alt="o’neul"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#menu1">o’neul</a></li>
+                    <li><a href="#menu2">Menu</a></li>
+                    <li><a href="#menu3">People</a></li>
+                    <li><a href="#menu4">Room</a></li>
+                </ul>
+
+                <a href="#" class="m_menu">menu</a>
+
+                <div class="mgnb_wrap">
+                    <ul class="mgnb">
+                        <li><a href="#">o’neul</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Room</a></li>
+                    </ul>
+
+                    <p class="close">닫기</p>
+                </div>
+            </nav>
+
+            <a href="#" class="reservation">Reservation</a>
+        </div>
+    </header>
+    <!--//header-->
+           
+           
+            <!--main_visual-->
+            <ul class="mv">
+                <li class="mv1 slide">
+                    <div class="txt">
+                        <h2>Restaurant o’neul</h2>
+                        <h3>가장 풍요롭고 생생한 시간,<br class="none">
+                            오늘을 주제로 한 전통 한식 다이닝</h3>
+                        <p>Restaurant o’neul is a Korean dining inspired<br class="none"> by the most fulfilling and vivid time, ‘today’.</p>
+                    </div>
+                </li>
+                <li class="mv2 slide">
+                    <div class="txt">
+                        <h2>Restaurant o’neul</h2>
+                        <h3>가장 풍요롭고 생생한 시간,<br class="none">
+                            오늘을 주제로 한 전통 한식 다이닝</h3>
+                        <p>Restaurant o’neul is a Korean dining inspired<br class="none"> by the most fulfilling and vivid time, ‘today’.</p>
+                    </div>
+                </li>
+                <li class="mv3 slide">
+                    <div class="txt">
+                        <h2>Restaurant o’neul</h2>
+                        <h3>가장 풍요롭고 생생한 시간,<br class="none">
+                            오늘을 주제로 한 전통 한식 다이닝</h3>
+                        <p>Restaurant o’neul is a Korean dining inspired<br class="none"> by the most fulfilling and vivid time, ‘today’.</p>
+                    </div>
+                </li>
+                <li class="mv4 slide">
+                    <div class="txt">
+                        <h2>Restaurant o’neul</h2>
+                        <h3>가장 풍요롭고 생생한 시간,<br class="none">
+                            오늘을 주제로 한 전통 한식 다이닝</h3>
+                        <p>Restaurant o’neul is a Korean dining inspired<br class="none"> by the most fulfilling and vivid time, ‘today’.</p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <!--//main_visual-->
+
+
+        <section id="value" class="section" data-anchor="menu2">
+            <!--value-->
+            <div class="inner">
+            <div class="desc">
+                <p class="s_tit">Restaurant o’neul</p>
+                <h2>o’neul Value</h2>
+                <p class="ment">레스토랑 오늘에서 선보이는 우리 음식은<br>
+                    한국인의 정체성을 담고 있는 한식에 기반을 두고 있으며,<br>
+                    우리 식 문화의 정통성을 지켜나가고 발전시켜 나가기 위해<br>
+                    레스토랑 오늘만의 스타일로 재해석 한 메뉴를 제공합니다.</p>
+
+                <p class="ment_eng">o’neul’s dishes are inspired by Korean traditions and techniques.<br>
+                    Here we offer our unique understanding of authentic Korean cuisine,<br>
+                    introducing its true values through each menu.</p>
+                <p class="detail"><a href="#">더보기</a></p>
+            </div>
+            <div class="value_img"><img src="images/value_img.jpg" alt="o’neul Value"></div>
+            </div>
+        </section>
+        <!--//value-->
+
+
+
+        <section id="menu" class="section" data-anchor="menu3">
+            <!--menu-->
+            <div class="inner">
+            <p class="s_tit">Restaurant o’neul</p>
+            <h2>o’neul Menu</h2>
+
+            <ul>
+                <li>
+                    <img src="images/menu_img01.jpg" alt="Luncheon">
+                    <a href="#" class="more">
+                        <h3>Luncheon</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="images/menu_img02.jpg" alt="Dinner">
+                    <a href="#" class="more">
+                        <h3>Dinner</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="images/menu_img03.jpg" alt="Banquet">
+                    <a href="#" class="more">
+                        <h3>Banquet / Party</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="images/menu_img04.jpg" alt="Signature wine">
+                    <a href="#" class="more">
+                        <h3>Signature wine</h3>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </section>
+        <!--//menu-->
+
+
+
+        <section id="room" class="section" data-anchor="menu4">
+           <div class="inner">
+            <p class="s_tit">Restaurant o’neul</p>
+            <h2>o’neul Room</h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>1F<span>Reception</span></dt>
+                        <dd>레스토랑 오늘에서<br>
+                            고객을 맞이하는 공간</dd>
+                        <dd class="view"><a href="#">view</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>2F<span>Dining Room</span></dt>
+                        <dd>편안하고 조용하게 다이닝을<br>
+                            즐길 수 있는 다이닝룸</dd>
+                        <dd class="view"><a href="#">view</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>3F<span>Hall</span></dt>
+                        <dd>야외 중정을 사이에 두고<br>
+                            두가지 스타일의 다이닝 홀</dd>
+                        <dd class="view"><a href="#">view</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>4F<span>Banquet/Party</span></dt>
+                        <dd>이벤트 컨셉에 따라 공간을<br>
+                            다양하게 활용하는 이벤트 다이닝</dd>
+                        <dd class="view"><a href="#">view</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            </div>
+        </section>
+            
+                        
+                                                
+            <footer id="footer" class="section fp-auto-height" data-anchor="menu5">
+            <!--footer-->
+            <p class="footer_logo">Restaurant o’neul</p>
+
+            <div class="footer_txt">
+                <address>서울시 용산구 장문로 60(동빙고동 1-54) Tel. 02-792-1054 <br class="none">Luncheon : 12:00 ~ 15:00 / Dinner : 18:00 ~ 22:00</address>
+                <p>레스토랑 오늘은 한식문화의 가치를 연구하고 특별한 경험을 소개하기 위해<br class="none">
+                    행복에프앤씨재단에서 운영하는 한식 다이닝 레스토랑입니다.</p>
+                <p class="copy">Copyright &copy; 2020 Restaurant o’neul. All right reserved.</p>
+            </div>
+
+            <ul class="sns">
+                <li><a href="#"><img src="images/icon_facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/icon_instar.svg" alt="instargram"></a></li>
+                <li><a href="#"><img src="images/icon_youtube.svg" alt="youtube"></a></li>
+            </ul>
+        </footer>
+        <!--//footer-->
+            
+
+
+    </div><!--//fullpage-->
+
+</body></html>

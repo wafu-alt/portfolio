@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* header */
+#header { height: 100px; }
+#header .inner { position: relative;}
+#header h1 { position: absolute; top: 10px;}
+#header .gnb { position: absolute; top: 0px; right: 0; z-index: 99;} 
+#header .gnb > li { float: left;  }
+#header .gnb > li > a { display: block; text-align: center; height: 100px; padding: 40px 35px 30px;
+    font-size: 20px; }
+/* hover */
+#header .gnb > li:hover > a { background: #ffcc00;}
+/* //hover */
+#header .gnb > li > .dp2 { padding: 20px 0 20px 20px; background: #ff7f00; }
+#header .gnb > li > .dp2 li a { display: inline-block; color: #fff; margin-bottom: 20px; font-size: 14px; border-bottom: 1px solid  #ff7f00 ;}
+#header .gnb > li > .dp2 li:last-child a { margin-bottom: 0;}
+/* hover  */
+#header .gnb > li > .dp2 li a:hover { border-bottom: 1px solid #fff; }
+/* //hover */
+
+/* 메인 배너 */
+#main_visual { border-top: 1px solid #000; background: url("../images/mv_01.jpg") no-repeat center top; height: 401px; }
+#main_visual .inner { position: relative;} 
+#main_visual .inner dl { position: absolute; right: 0; width: 500px; height: 293px; background: #000; color: #fff; padding: 40px;}
+#main_visual dl dd:nth-child(1) { color: #fffb00; font-size: 22px;}
+#main_visual dl dt:nth-child(2) { padding:  30px 0 25px 0 ; font-size: 32px; line-height: 1.2;}
+#main_visual dl dd:nth-child(3) { color: #99998f; font-size: 14px;}
+
+/* 비즈니스 */
+#contents1 { margin-top: 140px; margin-bottom: 150px;}
+#contents1 h2 { text-align: center; font-size: 36px; font-weight: 900;  }
+#contents1 p { text-align: center; font-size: 19px; padding: 20px 0 45px;}
+#contents1 ul { height: 380px; }
+#contents1 ul li { float: left; width: calc(100%/4); }
+#contents1 ul li a { display: block; text-align: center; padding: 150px 0 170px; color: #fff; font-size: 20px; background: rgba(0, 0, 0, 0.5);}
+#contents1 ul li:nth-child(1)  { background: url("../images/biz_01.jpg") no-repeat center top;}
+#contents1 ul li:nth-child(2)  { background: url("../images/biz_02.jpg") no-repeat center top;}
+#contents1 ul li:nth-child(3)  { background: url("../images/biz_03.jpg") no-repeat center top;}
+#contents1 ul li:nth-child(4)  { background: url("../images/biz_04.jpg") no-repeat center top;}
+
+#contents1 ul li:hover a { background: rgba(84, 165, 70, 0.8);}
+
+/* pr 동영상 */
+#contents2 { background: #dddddd; height: 655px;}
+#contents2 .inner { position: relative }
+#contents2 .movie { position: absolute; top: 100px;}
+#contents2 dl { position: absolute; left: 850px; top: 100px;}
+#contents2 dl dt { font-size: 36px; font-weight: 900; letter-spacing: 5px;}
+#contents2 dl dd:nth-child(2) { font-size: 20px; padding: 15px 0 50px;}
+#contents2 dl dd:nth-child(3) a{ display: block; color: #fff; background: #396bb0; padding: 15px 40px; border-radius: 40px; text-align: center;}
+
+/* 채용정보 */
+#contents3 { background: url("../images/recruit_bg.png") no-repeat center top; height: 450px;}
+#contents3 .inner { position: relative;}
+#contents3 .con3_txt { position: absolute; top: 100px; color: #fff;}
+#contents3 .con3_txt h2 { font-size: 36px; font-weight: 900; }
+#contents3 .con3_txt p { font-size: 20px; padding-top: 15px;}
+#contents3 .con3_li { position: absolute; left: 410px; top: 100px;}
+#contents3 .con3_li li { float: left;  text-align: center; transition: transform 1s; }
+/* hover */
+#contents3 .con3_li li:hover { transform: translate(0,-20px);}
+/* //hoever */
+#contents3 .con3_li li a { display: block; color: #fff; height: 250px; width: 250px; margin-left: 20px;}
+#contents3 .con3_li li a dl { padding-top: 160px;}
+#contents3 .con3_li li a dl dt { font-size: 20px; font-weight: 600; padding-bottom: 10px; }
+#contents3 .con3_li li a dl dd { font-size: 10px; opacity: 0.5;}
+#contents3 .con3_li li:nth-child(1) a { background: rgba(250, 130, 11, 0.9) url("../images/recruit_icon1.png") no-repeat center 45px; margin-left: 0;}
+#contents3 .con3_li li:nth-child(2) a { background: rgba(69, 114, 175, 0.9) url("../images/recruit_icon2.png") no-repeat center 45px;   }
+#contents3 .con3_li li:nth-child(3) a { background: rgba(62, 155, 49, 0.9) url("../images/recruit_icon3.png") no-repeat center 45px;  }
+
+
+
+/* footer */
+#footer .inner { position: relative; text-align: center;}
+.footer_logo { padding-top: 80px;}
+address { padding-top: 35px; padding-bottom: 10px;}
+.copy { color: #a69999; margin-bottom: 80px;}
+

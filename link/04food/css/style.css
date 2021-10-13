@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+a { columns: #000; text-decoration: none;}
+ol, ul { list-style: none;}
+table { border-collapse: collapse;}
+body { font-size: 16px; font-family: "맑은 고딕"; color: #000; line-height: 1.5;}
+
+/* 전체 */
+#container {width: 1200px; margin: 50px auto;}
+
+/* 좌측메뉴 */
+.lnb { width: 250px; float: left;}
+.lnb h2 { font-size: 30px; border-bottom: 3px solid #ee1d23; padding-bottom: 20px;}
+.lnb ul li a { display: block; padding: 10px 0; border-bottom: 1px solid #ddd; color: #000;}
+
+.lnb ul li a:hover, .lnb ul li a.on { color: #ee1d23; background: url(../images/menu_on.png) no-repeat right 17px; font-weight: 600;}
+
+/* 우측내용 */
+.contents { width: calc(100% - 300px); float: right; background: url(../images/bg_meat.gif) no-repeat right top;}
+.contents h1 { font-size: 50px;}
+.contents .comment { color: #999; padding: 10px 0 40px;}
+.contents .stit { font-size: 24px; color: #ee1d23; letter-spacing: -2px;
+    /* word-spacing: 20px; */}
+.contents .intro { height: 330px;}
+.contents .intro:after { content: ""; display: block; clear: both;}
+.contents .intro dt {width: 250px; height: 100%; float: left; background: #ee1d23; color: #fff; padding: 30px; font-size: 20px; font-style: italic;} 
+.contents .intro dd {width: 650px; float: right; }
+.contents .desc { background: #eee; border: 1px solid #ddd; padding: 30px; margin-top: 30px}
+.contents .desc h3 { padding-bottom: 10px;}

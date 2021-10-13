@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Nanum Gothic', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* 스타일 초기화 */
+html { font-size: 16px; overflow-y: scroll; }
+
+/* 요소 여백 초기화  */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* 하이퍼링크 설정 */
+a { color: #000; text-decoration: none; }
+
+/* 제목요소 */
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; } 
+
+/* 목록 불릿 없애기 */
+ol, ul { list-style: none; }
+
+/* 테이블 - 마크업에 'cellspacing="0"' 지정 함께 필요 */
+table { border-collapse: collapse; border-spacing: 0; border: 0 none; width: 100%; }
+
+/* 텍스트 관련 요소 초기화 */
+address, caption, em { font-weight: normal; font-style: normal; }
+
+/* 웹브라우저에서  */
+caption, legend, hr { display: none; }
+
+/* 테두리 없애기 */
+fieldset, img, input { border: 0 none; outline: none; } 
+
+/* 수직정렬 */
+input, select, textarea { vertical-align: middle; }
+
+
+
+/* 공통사항 */
+body { font-family: 'Poppins', 'Noto Sans KR', sans-serif; font-size: 100%; line-height: 1.5; color: #000; }
+#wrap {  max-width: 1920px; overflow-x: hidden; margin: 0 auto; }
+
+/* float해제 높이값 잡아주기 */
+.clearfix:after { content: ''; display: block; clear: both; }
+
+/* 기준해상도 영역잡기 */
+.inner { width: 1200px; margin: 0 auto; }
+
+/* 웹브라우저에서  */
+caption, legend, hr { display: none; }
+
+/* 테두리 없애기 */
+fieldset, img, input { border: 0 none; outline: none; } 
+
+/* 수직정렬 */
+input, select, textarea { vertical-align: middle; }
+
+
+
+
+/* top */
+#header {height: 312px; position: relative; z-index: 10;}
+#header .inner { height: 312px; position: relative;}
+#header .top_util { position: absolute; top: 32px; right: 0;}
+#header .top_util li { float: left;}
+#header .top_util li a { display: block; font-size: 16px; }
+#header .top_util li:nth-child(2) a { margin-left: 40px;}
+
+#header h1 { position: absolute; left: 50%; top: 45px; transform: translateX(-50%);}
+
+#header .top_search { position: absolute; left: 50%; top: 160px; transform: translateX(-50%);  }
+#header .top_search form { display: inline-block; width: 500px; border: 1px solid #e5e5e5; border-radius: 10px; }
+#header .top_search input[type="text"] { width: 80%; height: 50px ; padding-left: 20px;}
+#header .top_search input[type="submit"] { float: right; width: 50px; height: 50px; padding-right: 20px; text-indent: -9999px; background: url('../images/common/main-btn_search.png') no-repeat left center; cursor: pointer;}
+
+#header .gnb {width: 800px; position: absolute; left: 50%; top: 262px; transform: translateX(-50%); }
+#header .gnb > li { float: left;}
+#header .gnb > li > a {  font-size: 20px; font-weight: 600; text-align: center; padding: 21px 50px 21px 50px;}
+#header .gnb > li:hover > a { background: #f2ab55;}
+
+#header .gnb > li > .dp2 { margin-top: 20px; text-align: center; padding: 15px 0; background: #f2ab55; }
+#header .gnb > li:nth-child(4) > .dp2 { margin-right: 0; }
+#header .gnb > li > .dp2 > li { padding: 5px 0; }
+#header .gnb > li > .dp2 > li a { display: block; font-size: 18px; }
+#header .gnb > li > .dp2 > li:hover a { color: #F53E2E;} 
+
+/* footer */
+#footer { background: #aaa9a9;}
+#footer .inner { height: 260px; position: relative;}
+#footer .footer_logo { position: absolute; left: 0; top: 44px;}
+#footer .footer_link { float: left; position: absolute; left: 144px; top: 53px; }
+#footer .footer_link li { float: left; }
+#footer .footer_link li a { display: block;  padding-right: 40px; font-size: 20px;}
+#footer .footer_sns {float: left; position: absolute; right: 0; top: 47px; }
+#footer .footer_sns li {float: left; padding-left: 55px;}
+#footer address { position: absolute; left: 144px; top: 117px; font-size: 20px; }
+#footer .copy  { position: absolute; left: 144px; top: 180px; font-size: 20px;}

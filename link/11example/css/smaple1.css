@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* 밑에서 올라오는 것 */
+#list1 { padding: 100px;}
+#list1 li { overflow: hidden; float: left; width: calc((100% - 60px)/3); height: 470px; margin-left: 30px; position: relative;}/* 박스 상자에서 벗어나면 숨김 */
+#list1 li:nth-child(1) { margin-left: 0; background: url("../images/img1.jpg") no-repeat;}
+#list1 li:nth-child(2) { background: url("../images/img2.jpg") no-repeat;}
+#list1 li:nth-child(3) { background: url("../images/img3.jpg") no-repeat;}
+#list1 li h3 { font-size: 30px; color: #fff; font-weight: 600; text-transform: uppercase; padding: 30px;}
+#list1 li .detail { transition: top 0.5s; background: rgba(0, 0, 0,0.7); color: #fff; padding: 30px;  padding: 30px; position: absolute; left: 0; top: 470px;}/* 박스에서 벗어나게 해줌, top속성에 대해 470 > 250올라오는데 0.5초걸림 */
+#list1 li .detail a { display: inline-block; padding: 10px 20px; background: #fff; margin-top: 20px;}
+#list1 li:hover .detail { top: 250px;} /* 250에 디테일을 위치한다. */
+
+/* 확대 */
+#list2 { padding: 100px 0;}
+#list2 li { overflow: hidden; position: relative; float: left; margin-left: 30px; width: calc((100% - 60px)/3); height: 398px;}
+#list2 li:nth-child(1) { margin-left: 0;} /* 백그라운드로 이미지를 넣는것과 이미지 태그로 넣는것과 크기 차이가 남 */
+/* 이미지가 먼저 가로세로 적용, 가로세로 적용후 백그라운드 이미지 적용 */
+#list2 li img { width: 100%; transition: transform 0.5s;}/* 세로크기는 비율에 맞게 조정됨 */
+#list2 li:hover img { transform: scale(1.1,1.1);}/* 1.1~1.3까지 조정할 것 */
+#list2 li h3 { position: absolute; left: 30px; top: 30px; font-size: 30px; color: #fff; font-weight: 600; text-transform: uppercase;}
+#list2 li .detail2 a { position: absolute; left: 30px; top: 60px; display: inline-block; background: #fff; padding: 10px 30px;}
