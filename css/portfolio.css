@@ -110,7 +110,7 @@ body { background: #fbfbef;}
 /* 호버시 */
 #history .floor_img:hover .work_hover { display: flex;}
 /* 텍스트 부분 제어 */
-#history .floor_wrap .floor_txt {flex: 0 0 30%; height: 200px; padding: 30px; }
+#history .floor_wrap .floor_txt {flex: 0 0 30%; height: 200px; padding: 30px 30px 30px 10px; }
 #history .floor_wrap .floor_txt dt { font-weight: 600; padding-bottom: 10px;  }
 #history .floor_wrap .floor_txt dd { font-size: 14px;  }
 #history .floor_wrap .dummy {flex: 1 1 40%; }
