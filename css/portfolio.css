@@ -110,14 +110,14 @@ body { background: #fbfbef;}
 /* 호버시 */
 #history .floor_img:hover .work_hover { display: flex;}
 /* 텍스트 부분 제어 */
-#history .floor_wrap .floor_txt {flex: 0 0 30%; height: 200px; padding: 30px 30px 30px 10px; }
+#history .floor_wrap .floor_txt {flex: 0 0 30%; height: 200px; padding: 30px 30px 30px 10px; background: #fff; }
 #history .floor_wrap .floor_txt dt { font-weight: 600; padding-bottom: 10px;  }
 #history .floor_wrap .floor_txt dd { font-size: 14px;  }
 #history .floor_wrap .dummy {flex: 1 1 40%; }
 /* 홀수 순서 */
-#history .wrap > ul li:nth-of-type(1n) .floor_img { order: 1; background: springgreen;}
-#history .wrap > ul li:nth-of-type(1n) .floor_txt { order: 0; background: turquoise; text-align: right;}
-#history .wrap > ul li:nth-of-type(1n) .dummy { order: 2; background: violet;}
+#history .wrap > ul li:nth-of-type(1n) .floor_img { order: 1; }
+#history .wrap > ul li:nth-of-type(1n) .floor_txt { order: 0; text-align: right;}
+#history .wrap > ul li:nth-of-type(1n) .dummy { order: 2; }
 /* 짝수 순서 */
 #history .wrap > ul li:nth-of-type(2n) .floor_img { order: 1;}
 #history .wrap > ul li:nth-of-type(2n) .floor_txt { order: 2; text-align: left; }
